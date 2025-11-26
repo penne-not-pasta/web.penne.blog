@@ -1,0 +1,44 @@
+.google-sans-code {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+body {
+    background: url(assets/backgrounds/bg_1.jpg);
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FTR-COL-1 {
+    float: left;
+    margin: 0 auto;
+}
+
+#FTR-COL-2 {
+    float: left;
+    margin: 0 auto;
+}
+
+#FTR-COL-3 {
+    float: left;
+    margin: 0 auto;
+}
