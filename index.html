@@ -13,49 +13,121 @@
             <!--FAVICON-->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
             <!--CSS SCRIPTS-->
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
             <!--JS SCRIPTS-->
-            <!--EMBEDDING TO OTHER SITES-->
-                <!--twitter embed.-->
-        <meta name="twitter:card" content="">
-        <meta name="twitter:site" content="https://web.penne.blog">
-        <meta name="twitter:description" content="my twitter embed.">
-        <meta name="twitter:image" content="/assets/SOCIAL_MEDIA/twitter.png">
-        <meta name="twitter:url" content="">
-        <meta name="twitter:creator" content="@penne_is_pasta">
-                <!--facebook embed.-->
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Penne.">
-        <meta property="og:image" content="/assets/SOCIAL_MEDIA/facebook.png">
-        <meta property="og:description" content="Penne is a content creator centered around her hobbies!">
-        <meta property="og:site_name" content="">
-        <meta property="og:locale" content="en_US">
-        <meta property="article:author" content="penelope/penny haley">
+        <script src="pane_switch.js"></script>
+        <script src="open_product.js"></script>
+        <script src="visitors.js"></script>
+        <script src="timestamps.js"></script>
+        <script src="effects.js"></script>
             <!--OTHER-->
         <link rel="robots" href="robots.txt">
         <link rel="sitemap" href="sitemap.xml">
-        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <div id="HDR-GRID">
-                <div id="HDR-LOGO">
-                    <a href="index.html">
-                        <img src="favicon.ico" alt="Penne Logo">
-                    </a>
-                </div>
-                <div id="HDR-TXT"></div>
-            </div>
-            <nav></nav>
+      <div class="page" role="document" aria-label="Apple 1997 retro mock">
+        <header class="header">
+          <div class="logo" role="banner">
+            <div class="apple-mark" aria-hidden="true"></div>
+            <div class="brand">Penne</div>
+          </div>
+    
+          <nav class="top-nav" aria-label="top links">
+            <a href="projects.html">Projects</a>
+            <a href="https://store.penne.blog">Shop, Soon.</a>
+            <a href="projects.html">Projects</a>
+          </nav>
         </header>
-        <main></main>
-        <footer>
-            <div id="FTR-COL-1"></div>
-            <div id="FTR-COL-2"></div>
-            <div id="FTR-COL-3"></div>
-        </footer>
+    
+        <div class="announce" aria-hidden="false">
+          <div class="ticker">SHOP COMING SOON • COMMISSIONS OPEN! • FOLLOW ME ON ALL SOCIALS!</div>
+        </div>
+    
+        <main class="layout" role="main">
+          <aside class="left-col" aria-label="Site navigation">
+            <a href="#" onclick="showPane('home');return false;">Home</a>
+            <a href="#" onclick="showPane('performa');return false;">Software/Hardware</a>
+            <a href="#" onclick="showPane('support');return false;">Support</a>
+            <div style="margin-top:14px;" class="tiny">Quick links</div>
+            <a href="https://penne.blog" style="font-size:12px;">Blog</a>
+            <a href="https://youtube.com/@penne_not_pasta" style="font-size:12px;">YouTube</a>
+            <a href="https://x.com/@penne_not_pasta" style="font-size:12px;">Twitter</a>
+            <a href="https://instagram.com/azte.a" style="font-size:12px;">Instagram</a>
+            <a href="https://github.com/penne-not-pasta" style="font-size:12px;">GitHub</a>
+            <a href="https://guns.lol/pennenotpasta" style="font-size:12px;">guns.lol</a>
+          </aside>
+    
+          <section class="main" id="content" tabindex="0">
+            <!-- Default hero content -->
+            <div id="pane-home" class="pane">
+              <div class="hero" role="region" aria-labelledby="hero-title">
+                <div class="image" aria-hidden="true">
+                  <!-- Low-fi 'product' ASCII style -->
+                  <pre style="font-size:12px;line-height:1;margin:0;">
+              /\      
+             /\*\     
+            /\O\*\    
+           /*/\/\/\   
+          /\O\/\*\/\  
+         /\*\/\*\/\/\ 
+        /\O\/\/*/\/O/\
+              ||      
+              ||      
+              ||      
+                  </pre>
+                </div>
+                <div>
+                  <h1 id="hero-title">Penne not Pasta!</h1>
+                  <p class="muted">THE MOST UNFUNNY YOUTUBER AROUND!!</p>
+                  <div style="margin-top:10px;">
+                    <a class="btn" href="#" onclick="openProduct('PENNE');return false;">Learn more »</a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="dotted"></div>
+    
+              <h2 style="font-size:16px;margin:8px 0 6px;">Latest News</h2>
+              <ul style="margin:0 0 12px 18px;font-size:13px;color:#234d6b">
+                <li>Blog avaliable now.</li>
+                <li>Tiktok & Instagram Updated.</li>
+                <li>Read more on the <a href="https://penne.blog/">blog.</a></li>
+              </ul>
+
+            <div id="pane-performa" class="pane" style="display:none">
+              <h2 style="margin-top:0">Software</h2>
+              <p class="muted">Software I use.</p>
+              <ul>
+                  <li>Zed - Text Editor</li>
+                  <li>FireFox - Browser</li>
+                  <li>Ruul.space - Commissions Platform</li>
+                  <li>Git - Version Control Manager</li>
+                  <li>Debian 13 (LINUX) - Operating System</li>
+                  <li>GitHub - Version Control Website</li>
+                  <li>Proton Mail iOS - E-mail Client</li>
+                  <li>Google Drive - Cloud Storage</li>
+                  <li>Discord - Communication Platform</li>
+                  <li>Steam - Gaming Platform</li>
+                  <li>Spotify - Music Streaming Service</li>
+              </ul>
+              <h2 style="margin-top:0">Hardware</h2>
+              <p class="muted">Hardware I use. (as of 2025)</p>
+              <ul>
+                  <li>Microsoft Surface Pro 7, 128GB SSD, 4GB RAM</li>
+              </ul>
+            </div>
+    
+            <div id="pane-support" class="pane" style="display:none">
+              <h2 style="margin-top:0">Support</h2>
+              <p class="muted">Contact me via EMAIL @ <a href="mailto:pennenotpasta@proton.me">proton.me</a></span></p>
+            </div>
+    
+          </section>
+          
+          <footer class="footer">
+            © Penne Not Pasta. 2025. - ALL RIGHTS RESERVED.
+          </footer>
+        </div>
     </body>
 </html>

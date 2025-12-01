@@ -1,0 +1,1 @@
+document.getElementById('genDate').textContent = (new Date()).toLocaleString();
